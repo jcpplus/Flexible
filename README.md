@@ -2,7 +2,7 @@
 使用Flexible实现H5页面的终端适配
 
 # 参考
-[w3cplus](http://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
+[w3cplus使用Flexible实现手淘H5页面的终端适配](http://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
 
 [可伸缩布局方案](https://github.com/amfe/lib-flexible)
 
