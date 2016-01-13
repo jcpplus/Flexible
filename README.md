@@ -3,6 +3,7 @@
 
 # 参考
 [w3cplus](http://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
+
 [可伸缩布局方案](https://github.com/amfe/lib-flexible)
 
 # px2rem
