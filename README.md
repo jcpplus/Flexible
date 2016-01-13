@@ -10,5 +10,9 @@
 官方说明中描述psd稿的宽度有
 > 首先，目前视觉稿大小分为`640`，`750`以及，`1125`这三种。
 
+## step1
+
+完成官方的demo，发现有一个宽度比较奇怪
+![宽度](http://ww2.sinaimg.cn/large/602cf753jw1ezxwdzvfdvj20x40mfjz0.jpg)
 todo
 - 我试一下宽度为`1080`的psd稿如何

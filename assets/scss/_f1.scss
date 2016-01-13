@@ -1,0 +1,124 @@
+/*test*/
+
+.selector {
+    width: 150px;
+    height: 64px;
+    /*px*/
+    font-size: 28px;
+    /*px*/
+    border: 1px solid #ddd;
+    /*no*/
+    width: rem-calc(750);
+    font-size: rem-calc(12px);
+    @include font-dpr(16px);
+}
+
+html,
+body {
+    height: 100vh;
+    background-color: #ee0a3b;
+}
+
+.item-section {
+    min-height: 100%;
+    background-color: #ee0a3b;
+    position: relative;
+    @include font-dpr(12px);
+    ul {
+        padding: rem-calc(10);
+    }
+}
+
+.item-section_header {
+    text-align: center;
+    img {
+        width: rem-calc(750);
+    }
+}
+
+.flag {
+    display: table;
+    width: 100%;
+    margin-bottom: 1px;
+    background-color: #fff;
+    .flag-item {
+        display: table-cell;
+        padding: rem-calc(12 0);
+        vertical-align: top;
+        background-color: #fff;
+        &.figure {
+            width: rem-calc(180);
+            height: rem-calc(180);
+        }
+        img {
+            width: rem-calc(180);
+            height: rem-calc(180);
+            vertical-align: top;
+        }
+        &.figcaption {
+            width: rem-calc(520);
+            padding-left: rem-calc(15);
+            padding-right: rem-calc(15);
+            position: relative;
+        }
+    }
+    .flag-title a {
+        color: #333;
+        line-height: 1.25;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        box-orient: vertical;
+        display: flex;
+        display: -webkit-box;
+    }
+    .flag-price {
+        padding: rem-calc(12 0 15);
+        // @include px2rem(padding, 12.8,0,9.6,0);
+        span {
+            display: inline-block;
+            background-color: #ee0a3b;
+            vertical-align: middle;
+            border-radius: rem-calc(2);
+            // padding: .026667rem .08rem .013333rem;
+            padding: rem-calc(2 6 1);
+            color: #fff;
+            font-weight: 700;
+            margin-right: rem-calc(5);
+            @include font-dpr(11px);
+        }
+        strong {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 700;
+            color: #ee0a3b;
+            margin-right: rem-calc(12.5);
+            @include font-dpr(16px);
+        }
+        small {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 700;
+            color: #ee0a3b;
+            @include font-dpr(12px);
+        }
+    }
+    .flag-type {
+        color: #ff3600;
+    }
+    .flag-btn {
+        position: absolute;
+        width: rem-calc(160);
+        height: rem-calc(48);
+        line-height: rem-calc(48);
+        background-color: #ee0a3b;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        bottom: rem-calc(10);
+        right: rem-calc(20);
+        border-radius: rem-calc(2);
+        @include font-dpr(14px);
+    }
+}

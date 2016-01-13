@@ -1,0 +1,22 @@
+{
+  "name": "wap-app-site",
+  "version": "1.0.0",
+  "description": "tuku app html5 site",
+  "dependencies": {
+    "del": "~1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-imagemin": "~2.2.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "~1.1.0",
+    "gulp-util": "~3.0.4",
+    "imagemin-pngquant": "^4.0.0",
+    "through2": "~0.6.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-filter": "^3.0.1"
+  }
+}
