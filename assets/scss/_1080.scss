@@ -98,7 +98,8 @@ $rem-base: 108px;
 
 /*********nav**********/
 .tuku-nav{
-    position: absolute;
+    // position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -158,10 +159,74 @@ $rem-base: 108px;
 }
 .designer-profile {
     position: relative;
-     padding-top: rem-calc(132);
-    // background: url(../img/profile_bg.jpg) no-repeat;
-    background-size: contain;
-    width: rem-calc(1080);
-    height: rem-calc(584);
-
+    background: url(../img/profile_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    .profile-detail {
+       padding: rem-calc(60 0 40 0);
+    }
+}
+ .profile-op {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    .profile-avator {
+        margin: 0 rem-calc(135);
+        width: rem-calc(200);
+        height: rem-calc(200);
+        border-radius: 50%;
+        border: 1px solid #999;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .profile-follow ,
+    .profile-per-order {
+        background: #689f38;
+        color: #fff;
+        @include font-dpr(15px);
+        width: rem-calc(254);
+        height: rem-calc(100);
+        line-height: rem-calc(100);
+        text-align: center;
+        &:active,
+        &.hover {
+            background: #97c074;
+        }
+    }
+}
+.profile-social {
+    text-align: center;
+    padding-top:rem-calc(30);
+    .profile-name {
+        padding-bottom: rem-calc(12);
+        color: #333;
+        @include font-dpr(16px);
+    }
+    .profile-city {
+        color: #666;
+        @include font-dpr(13px);
+    }
+    .profile-item {
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        padding-top: rem-calc(42);
+        .social {
+            -webkit-flex: 1;
+            color: #666;
+            &:nth-child(2) {
+                margin: rem-calc(0 100);
+            }
+        }
+        .social-item-num {
+            @include font-dpr(14px);
+            color: #689f38;
+        }
+        .social-item-text {
+            padding-top: rem-calc(28);
+            @include font-dpr(13px);
+        }
+    }
 }
